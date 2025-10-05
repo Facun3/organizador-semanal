@@ -1,6 +1,7 @@
 package com.organizadorsemanal.ui
 
-import androidx.lifecycle.ViewModel
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.organizadorsemanal.data.Actividad
 import com.organizadorsemanal.data.ActividadRepository
@@ -9,13 +10,17 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
-class ActividadViewModel(private val repository: ActividadRepository) : ViewModel() {
+class ActividadViewModel(
+    private val repository: ActividadRepository,
+    private val application: Application
+) : AndroidViewModel(application) {
     
     private val _actividades = MutableStateFlow<List<Actividad>>(emptyList())
     val actividades: StateFlow<List<Actividad>> = _actividades.asStateFlow()
     
     private val _actividadesPorDia = MutableStateFlow<Map<String, List<Actividad>>>(emptyMap())
     val actividadesPorDia: StateFlow<Map<String, List<Actividad>>> = _actividadesPorDia.asStateFlow()
+    
     
     init {
         loadActividades()

@@ -28,6 +28,9 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import android.app.Application
+import android.app.TimePickerDialog
+import android.content.Context
 import com.organizadorsemanal.data.Actividad
 import com.organizadorsemanal.data.ActividadRepository
 import com.organizadorsemanal.data.AppDatabase
@@ -45,8 +48,9 @@ class MainActivity : ComponentActivity() {
                 ) {
                     val database = AppDatabase.getDatabase(this)
                     val repository = ActividadRepository(database.actividadDao())
+                    val context = LocalContext.current
                     val viewModel: ActividadViewModel = viewModel { 
-                        ActividadViewModel(repository) 
+                        ActividadViewModel(repository, context.applicationContext as Application) 
                     }
                     
                     OrganizadorSemanalApp(viewModel = viewModel)
@@ -318,6 +322,72 @@ fun DiaButton(
 }
 
 @Composable
+fun TimeSelector(
+    label: String,
+    selectedTime: String,
+    onTimeSelected: (String) -> Unit,
+    modifier: Modifier = Modifier
+) {
+    val context = LocalContext.current
+    val (hora, minuto) = selectedTime.split(":").let { 
+        it[0].toInt() to it[1].toInt() 
+    }
+    
+    Column(modifier = modifier) {
+        Text(
+            text = label,
+            style = MaterialTheme.typography.caption,
+            color = MaterialTheme.colors.onSurface.copy(alpha = 0.7f),
+            modifier = Modifier.padding(bottom = 8.dp)
+        )
+        
+        // Botón que abre el TimePickerDialog
+        Card(
+            modifier = Modifier
+                .fillMaxWidth()
+                .clickable {
+                    val timePickerDialog = TimePickerDialog(
+                        context,
+                        { _, hourOfDay, minute ->
+                            val formattedTime = String.format("%02d:%02d", hourOfDay, minute)
+                            onTimeSelected(formattedTime)
+                        },
+                        hora,
+                        minuto,
+                        true // 24-hour format
+                    )
+                    timePickerDialog.show()
+                },
+            backgroundColor = MaterialTheme.colors.surface,
+            elevation = 2.dp,
+            shape = RoundedCornerShape(8.dp)
+        ) {
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(16.dp),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                Text(
+                    text = selectedTime,
+                    style = MaterialTheme.typography.h6,
+                    color = MaterialTheme.colors.onSurface,
+                    fontWeight = FontWeight.Medium
+                )
+                Icon(
+                    imageVector = Icons.Default.ArrowDropDown,
+                    contentDescription = "Seleccionar hora",
+                    tint = MaterialTheme.colors.primary,
+                    modifier = Modifier.size(20.dp)
+                )
+            }
+        }
+    }
+}
+
+
+@Composable
 fun AddActividadDialog(
     diasSemana: List<String>,
     onDismiss: () -> Unit,
@@ -393,25 +463,24 @@ fun AddActividadDialog(
                 }
                 
                 // Horarios
+                // Selectores de horarios
                 Row(
                     modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                    horizontalArrangement = Arrangement.spacedBy(16.dp)
                 ) {
-                    OutlinedTextField(
-                        value = horaInicio,
-                        onValueChange = { horaInicio = it },
-                        label = { Text("Inicio") },
+                    TimeSelector(
+                        label = "Hora de Inicio",
+                        selectedTime = horaInicio,
+                        onTimeSelected = { horaInicio = it },
                         modifier = Modifier.weight(1f)
                     )
-                    OutlinedTextField(
-                        value = horaFin,
-                        onValueChange = { horaFin = it },
-                        label = { Text("Fin") },
+                    TimeSelector(
+                        label = "Hora de Fin",
+                        selectedTime = horaFin,
+                        onTimeSelected = { horaFin = it },
                         modifier = Modifier.weight(1f)
                     )
-                }
-                
-                // Selector de color
+                }                // Selector de color
                 Text("Color:", style = MaterialTheme.typography.caption)
                 Row(
                     horizontalArrangement = Arrangement.spacedBy(8.dp)
@@ -439,6 +508,7 @@ fun AddActividadDialog(
                         )
                     }
                 }
+                
             }
         },
         confirmButton = {
@@ -451,7 +521,7 @@ fun AddActividadDialog(
                                 dia = dia,
                                 horaInicio = horaInicio,
                                 horaFin = horaFin,
-                                color = color
+                                color = color,
                             )
                         )
                     }
@@ -544,21 +614,21 @@ fun EditActividadDialog(
                     }
                 }
                 
-                // Horarios
+                // Selectores de horarios
                 Row(
                     modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                    horizontalArrangement = Arrangement.spacedBy(16.dp)
                 ) {
-                    OutlinedTextField(
-                        value = horaInicio,
-                        onValueChange = { horaInicio = it },
-                        label = { Text("Inicio") },
+                    TimeSelector(
+                        label = "Hora de Inicio",
+                        selectedTime = horaInicio,
+                        onTimeSelected = { horaInicio = it },
                         modifier = Modifier.weight(1f)
                     )
-                    OutlinedTextField(
-                        value = horaFin,
-                        onValueChange = { horaFin = it },
-                        label = { Text("Fin") },
+                    TimeSelector(
+                        label = "Hora de Fin",
+                        selectedTime = horaFin,
+                        onTimeSelected = { horaFin = it },
                         modifier = Modifier.weight(1f)
                     )
                 }
@@ -591,6 +661,7 @@ fun EditActividadDialog(
                         )
                     }
                 }
+                
             }
         },
         confirmButton = {
@@ -603,7 +674,7 @@ fun EditActividadDialog(
                                 dia = dia,
                                 horaInicio = horaInicio,
                                 horaFin = horaFin,
-                                color = color
+                                color = color,
                             )
                         )
                     }
