@@ -1,101 +1,130 @@
-# Organizador Semanal
+# 📅 Organizador Semanal
 
-Una aplicación Android minimalista para organizar actividades semanales con notificaciones personalizables.
+Una aplicación Android moderna y minimalista para organizar tus actividades semanales de manera visual e intuitiva.
 
 ## 🎯 Características
 
-- **Calendario Semanal**: Vista de 7 días (Lunes a Domingo) con horarios visibles
-- **Tipos Personalizables**: Crea tus propios tipos de actividades con colores únicos
-- **Notificaciones**: Recordatorios configurables antes de cada actividad
-- **Diseño Minimalista**: Interfaz limpia y accesible
-- **Almacenamiento Local**: Datos guardados localmente con Room (SQLite)
+- **📱 Interfaz Moderna**: Diseño limpio con Jetpack Compose y Material Design
+- **🗓️ Vista Semanal**: Organización visual de actividades por días de la semana
+- **🎨 Colores Personalizables**: 6 colores predefinidos para categorizar actividades
+- **💾 Persistencia de Datos**: Base de datos Room para guardar actividades permanentemente
+- **⚡ Arquitectura MVVM**: Código limpio y mantenible con ViewModel y Repository
+- **🗑️ Gestión de Actividades**: Agregar y eliminar actividades fácilmente
 
-## 🏗️ Arquitectura Técnica
+## 🛠️ Tecnologías Utilizadas
 
-- **Lenguaje**: Kotlin
-- **UI**: Jetpack Compose
-- **Base de datos**: Room (SQLite local)
-- **Arquitectura**: MVVM con Hilt para inyección de dependencias
-- **Notificaciones**: WorkManager + NotificationCompat
-- **Navegación**: Navigation Component
+- **Kotlin** - Lenguaje de programación
+- **Jetpack Compose** - Framework de UI moderno
+- **Room Database** - Persistencia de datos local
+- **Material Design** - Sistema de diseño de Google
+- **MVVM Architecture** - Patrón de arquitectura
+- **Coroutines** - Programación asíncrona
+- **StateFlow** - Gestión de estado reactivo
 
-## 📱 Pantallas
+## 📱 Capturas de Pantalla
 
-1. **Calendario Semanal** - Vista principal con todas las actividades
-2. **Agregar/Editar Actividad** - Formulario para gestionar actividades
-3. **Gestión de Tipos** - Crear y personalizar tipos de actividades
-4. **Configuración** - Ajustes de la aplicación
+La aplicación presenta:
+- Vista principal con tarjetas de días de la semana
+- Formulario intuitivo para agregar actividades
+- Selector visual de días con botones
+- Tarjetas de actividades con colores personalizables
+- Botones de eliminación para cada actividad
 
-## 🚀 Cómo usar
-
-### Primer uso
-1. Abre la aplicación
-2. Crea tipos de actividades (ej: "Estudio Japonés", "Gym", "Trabajo")
-3. Asigna colores a cada tipo
-4. Configura tus preferencias de notificaciones
-
-### Uso diario
-1. Ve el calendario semanal con tus actividades
-2. Toca en un horario vacío para agregar una nueva actividad
-3. Toca en una actividad existente para editarla
-4. Gestiona tipos desde el menú de configuración
-
-## 🛠️ Instalación y Desarrollo
+## 🚀 Instalación y Uso
 
 ### Requisitos
 - Android Studio Arctic Fox o superior
-- Android SDK 24+
-- Kotlin 1.9.10+
+- Android SDK 34
+- Dispositivo Android con API 24+ o emulador
 
-### Configuración
-1. Clona el repositorio
+### Instalación
+1. Clona el repositorio:
+```bash
+git clone https://github.com/tu-usuario/organizador-semanal.git
+```
+
 2. Abre el proyecto en Android Studio
+
 3. Sincroniza las dependencias de Gradle
-4. Ejecuta la aplicación
 
-### Estructura del Proyecto
-```
-app/
-├── src/main/java/com/organizadorsemanal/
-│   ├── data/
-│   │   ├── database/          # Room database y convertidores
-│   │   ├── dao/              # Data Access Objects
-│   │   ├── model/            # Entidades de datos
-│   │   └── repository/       # Repositorios
-│   ├── di/                   # Módulos de Hilt
-│   ├── notification/         # Sistema de notificaciones
-│   ├── ui/
-│   │   ├── components/       # Componentes reutilizables
-│   │   ├── screens/          # Pantallas de la aplicación
-│   │   ├── theme/            # Temas y colores
-│   │   └── viewmodel/        # ViewModels
-│   └── MainActivity.kt
+4. Ejecuta la aplicación:
+```bash
+./gradlew installDebug
 ```
 
-## 📋 Funcionalidades Implementadas
+### Uso de la Aplicación
+1. **Agregar Actividades**: Toca el botón "+" flotante
+2. **Seleccionar Día**: Elige el día de la semana de la lista
+3. **Configurar Horarios**: Establece hora de inicio y fin
+4. **Elegir Color**: Selecciona un color para categorizar
+5. **Guardar**: Toca "Agregar" para crear la actividad
+6. **Eliminar**: Toca el icono de eliminar en cualquier actividad
 
-- ✅ Estructura básica del proyecto Android
-- ✅ Configuración de dependencias (Room, Compose, Hilt, WorkManager)
-- ✅ Entidades de datos (TipoActividad, Actividad, DiaSemana)
-- ✅ Base de datos Room con DAOs
-- ✅ Repositorios y ViewModels con MVVM
-- ✅ Pantalla principal del calendario semanal
-- ✅ Pantallas de gestión de actividades y tipos
-- ✅ Sistema de notificaciones con WorkManager
+## 🏗️ Estructura del Proyecto
 
-## 🔮 Funcionalidades Futuras
+```
+app/src/main/java/com/organizadorsemanal/
+├── data/
+│   ├── Actividad.kt              # Entidad de datos
+│   ├── ActividadDao.kt           # Acceso a datos
+│   ├── ActividadRepository.kt    # Repositorio de datos
+│   └── AppDatabase.kt            # Base de datos Room
+├── ui/
+│   └── ActividadViewModel.kt     # ViewModel para UI
+├── ui/theme/
+│   ├── Color.kt                  # Paleta de colores
+│   ├── Theme.kt                  # Tema de la aplicación
+│   └── Type.kt                   # Tipografía
+└── MainActivity.kt               # Actividad principal
+```
 
-- Navegación entre semanas
-- Búsqueda de actividades
-- Exportar/importar calendario
-- Sincronización con Google Calendar
-- Soporte multiidioma
-- Temas personalizables
+## 🎨 Diseño
 
-## 📄 Licencia
+La aplicación sigue los principios de Material Design con:
+- **Colores**: Paleta personalizada con modo claro y oscuro
+- **Tipografía**: Jerarquía clara de textos
+- **Espaciado**: Sistema de espaciado consistente
+- **Elevación**: Uso de sombras para profundidad
+- **Interactividad**: Feedback visual en todas las interacciones
 
-Este proyecto es de uso personal y educativo.
+## 📊 Funcionalidades
+
+### ✅ Implementadas
+- [x] Vista semanal con tarjetas de días
+- [x] Agregar actividades con formulario completo
+- [x] Selector visual de días de la semana
+- [x] Colores personalizables para actividades
+- [x] Persistencia de datos con Room
+- [x] Eliminación de actividades
+- [x] Arquitectura MVVM completa
+
+### 🔄 Futuras Mejoras
+- [ ] Edición de actividades existentes
+- [ ] Notificaciones programadas
+- [ ] Categorías de actividades
+- [ ] Exportar/importar datos
+- [ ] Modo oscuro automático
+- [ ] Widgets de pantalla de inicio
+- [ ] Sincronización en la nube
+
+## 🤝 Contribuir
+
+Las contribuciones son bienvenidas. Para contribuir:
+
+1. Fork el proyecto
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
+
+## 📝 Licencia
+
+Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
 
 ## 👨‍💻 Autor
 
-Desarrollado siguiendo las especificaciones del documento de requerimientos.
+Desarrollado con ❤️ para ayudar a organizar mejor tu tiempo semanal.
+
+---
+
+**¿Te gusta el proyecto?** ⭐ Dale una estrella al repositorio para apoyar el desarrollo.
