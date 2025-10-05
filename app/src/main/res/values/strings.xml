@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Organizador Semanal</string>
+    
+    <!-- Pantalla principal -->
+    <string name="calendar_title">Organizador Semanal</string>
+    <string name="add_activity">Agregar actividad</string>
+    <string name="settings">Configuración</string>
+    
+    <!-- Estado vacío -->
+    <string name="welcome_title">¡Bienvenido al Organizador Semanal!</string>
+    <string name="welcome_message">Comienza creando tipos de actividades y luego agrega tus actividades semanales.</string>
+    <string name="create_first_activity">Crear mi primera actividad</string>
+    
+    <!-- Días de la semana -->
+    <string name="monday">Lunes</string>
+    <string name="tuesday">Martes</string>
+    <string name="wednesday">Miércoles</string>
+    <string name="thursday">Jueves</string>
+    <string name="friday">Viernes</string>
+    <string name="saturday">Sábado</string>
+    <string name="sunday">Domingo</string>
+    
+    <!-- Actividades -->
+    <string name="activity_name">Nombre de la actividad</string>
+    <string name="activity_type">Tipo de actividad</string>
+    <string name="activity_day">Día</string>
+    <string name="start_time">Hora de inicio</string>
+    <string name="end_time">Hora de fin</string>
+    <string name="notification_minutes">Minutos antes de notificar</string>
+    
+    <!-- Tipos de actividades -->
+    <string name="activity_type_name">Nombre del tipo</string>
+    <string name="activity_type_color">Color</string>
+    <string name="create_type">Crear tipo</string>
+    <string name="edit_type">Editar tipo</string>
+    <string name="delete_type">Eliminar tipo</string>
+    
+    <!-- Acciones -->
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="delete">Eliminar</string>
+    <string name="edit">Editar</string>
+    
+    <!-- Notificaciones -->
+    <string name="notification_title">Recordatorio de actividad</string>
+    <string name="notification_text">Tu actividad \"%1$s\" comienza en %2$d minutos</string>
+</resources>

@@ -1,0 +1,449 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:2:1-31:12
+MERGED from [com.google.android.material:material:1.10.0] /Users/facundochoque/.gradle/caches/transforms-3/2d8edfc209e4ab65f141e6d058181d46/transformed/material-1.10.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/facundochoque/.gradle/caches/transforms-3/715d98de68a408817aa249e0f6cabd4b/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/facundochoque/.gradle/caches/transforms-3/ee8eb848c5330bef157da8af9750dcb7/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/facundochoque/.gradle/caches/transforms-3/697ee353b063d3c1ee71219466070b5b/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/facundochoque/.gradle/caches/transforms-3/66f4feb0e82fddb4d699fb6166edeed6/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/facundochoque/.gradle/caches/transforms-3/9af6aa697790ad04f2129115a7a8fbee/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/12b3279d18e036ac11b3f0b8c63a3258/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/facundochoque/.gradle/caches/transforms-3/fe397aa42d900d3b28a348b385f5e982/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/facundochoque/.gradle/caches/transforms-3/41343b558273997f7d70448b52b84334/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/facundochoque/.gradle/caches/transforms-3/232021df2d298f6d23e9c587b7d1311a/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/ba9c11aa1a191cbec2bc33f809b381d8/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.7.5] /Users/facundochoque/.gradle/caches/transforms-3/8839eb475bcc0ba331714d5f764d5c6b/transformed/navigation-common-2.7.5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.7.5] /Users/facundochoque/.gradle/caches/transforms-3/d8c8a2cc44ef1b7c58c0110438300cac/transformed/navigation-runtime-2.7.5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.5] /Users/facundochoque/.gradle/caches/transforms-3/7745219327648d2826747a4017ad4d55/transformed/navigation-common-ktx-2.7.5/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.5] /Users/facundochoque/.gradle/caches/transforms-3/58a70cc7a1d0a9f75b9f1c448e3500bf/transformed/navigation-runtime-ktx-2.7.5/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-compose:2.7.5] /Users/facundochoque/.gradle/caches/transforms-3/b47b9d8be6363a71931d41470b0f5087/transformed/navigation-compose-2.7.5/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-ripple-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/a3b756f7dab1230055f838096fe442f5/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/abe809c85f5998e61de18596dd607c61/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/ab4cfc6315e5eab0bedd0a08e615c5e3/transformed/material-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/eac4b040dd593625b7d244eeade77243/transformed/foundation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/32c8edb9ac58ba912954a2bddce27e61/transformed/foundation-layout-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-core-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/5b666fe454930ce972d9bfa1522417da/transformed/animation-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/b60622c98e79b54e3a49e104b4ba516b/transformed/animation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/22d13b5c22cfef480953255033a31902/transformed/ui-tooling-data-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/0169968bae69bc32bccec015c6f53c04/transformed/ui-unit-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/4704be1f0ca9cac01b960cdfe2ac6dde/transformed/ui-geometry-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/dcc080b7f6853f008a0acd9da4b026b0/transformed/ui-util-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/2bc688ee394cf67ca3a0df43ad96bcea/transformed/ui-text-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/b38d13018911ce9e1dbe80e71dc3e541/transformed/ui-tooling-preview-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/f39b6572e1008722e6ee9c91e4ea2be4/transformed/ui-graphics-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-test-manifest:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/d2d450898919ffa6b13326864ae67de5/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.compose.ui:ui-tooling-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/526307f7b43e930470841c0e92ede009/transformed/ui-tooling-release/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/facundochoque/.gradle/caches/transforms-3/58fdc015275af2eee056c7aafdb67fbe/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/facundochoque/.gradle/caches/transforms-3/b7fa08a3f5cba1cc2f788bf3279c53b4/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/facundochoque/.gradle/caches/transforms-3/8b2d7e45ef4015f2b7c03f2560adaefd/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/920d8a29ccfb6e2d5881167c29ea8d26/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/3fbd80b53bfc7d5bb0b4e4bde9b8b8c5/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.4.0] /Users/facundochoque/.gradle/caches/transforms-3/6db25307f77850c9b1b5ac8d18dddf56/transformed/emoji2-views-helper-1.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/facundochoque/.gradle/caches/transforms-3/6e7435505173a793f56e9a38678f800a/transformed/emoji2-1.4.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/2ecb2e81806e6b0d045fe61c8d672a64/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/ab8f0c175b0de9b10a292b4f0e45e09d/transformed/lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/d6c6519dff4fa2be93bea7dc989fac35/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/dc1832491b1a2bbda5878cec9fc407e5/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/c6d1005910246d1eeab044517fe4b50d/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/bae307bd325e70395e5e1c1ae8daf169/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/7d744f23987dbeec612213d6916c5764/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/8c995eebe81d814c7102cb9b10d6ce02/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/181aebb66e74b2d0c55fc93269388518/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/59e18f1ebed7ccc9d77282fef382bd17/transformed/lifecycle-viewmodel-compose-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/2335702b9b0951f52b6cf4bea44b59cc/transformed/ui-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-ktx:1.8.2] /Users/facundochoque/.gradle/caches/transforms-3/7589340379737d707dcf3a30d49093a1/transformed/activity-ktx-1.8.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-compose:1.8.2] /Users/facundochoque/.gradle/caches/transforms-3/22fdff7a6d39e6c2d93e6da36226ede3/transformed/activity-compose-1.8.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity:1.8.2] /Users/facundochoque/.gradle/caches/transforms-3/697265d2d93dd9b1a4d7e1170b5bf7e1/transformed/activity-1.8.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/facundochoque/.gradle/caches/transforms-3/6d8705b3720be90b9eea7fb8bdc3d5ff/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/a643d5bb9697e7caf88797c7b2ee4b6c/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] /Users/facundochoque/.gradle/caches/transforms-3/8b48728c8649084b92ef7c52391c6e86/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/fc4408490ec1b50b7bcc8a4c2189186e/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.12.0] /Users/facundochoque/.gradle/caches/transforms-3/66eab059273d7711764ca64e2bd58a42/transformed/core-1.12.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/d4d6d4b1720093dddec923c26db51e95/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.12.0] /Users/facundochoque/.gradle/caches/transforms-3/30e60494cc12bfd44f56743e253f3c1f/transformed/core-ktx-1.12.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/facundochoque/.gradle/caches/transforms-3/294378bd318e105f6faa6a42d0dc019c/transformed/room-runtime-2.6.1/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.room:room-ktx:2.6.1] /Users/facundochoque/.gradle/caches/transforms-3/fa7e0a37a604fe71e54599b94682a3e6/transformed/room-ktx-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/facundochoque/.gradle/caches/transforms-3/ab3e86cdebe003f146879974a48c1ed5/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/facundochoque/.gradle/caches/transforms-3/57327fc6e2b7e1b913fcb978d0da48b7/transformed/sqlite-2.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/8296343c7edf50d8697c728d6ab6c547/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/8577de941928488c7261fdb674ea2b92/transformed/runtime-saveable-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/4bcb75b42ed98371d8462e1995aca9a7/transformed/runtime-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/f4ac3b97f816197194a893dadc0a8f77/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/facundochoque/.gradle/caches/transforms-3/06aa9d439898bb2a8edb55732e86935e/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/7e23de4ac42d4463023366659b29eb23/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/facundochoque/.gradle/caches/transforms-3/50bb283d00a33c4fd075863199e62beb/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/8c6c1015ef7e4917680c0ab949f00d11/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/facundochoque/.gradle/caches/transforms-3/a4c7fc815a582c4abbb5556f9e472f6d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/e279acc52b55846186fbc4a7726a3171/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/d2fdb71a98f83b6334f351c71b992ff1/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/43ebe443050df02059d17f13d422d63c/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/e2ae2fca550e76201b2e32395d612bfa/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+	package
+		INJECTED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:5:5-77
+	android:name
+		ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:5:22-74
+uses-permission#android.permission.SCHEDULE_EXACT_ALARM
+ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:6:22-76
+uses-permission#android.permission.USE_EXACT_ALARM
+ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:7:5-74
+	android:name
+		ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:7:22-71
+application
+ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:9:5-29:19
+INJECTED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:9:5-29:19
+MERGED from [com.google.android.material:material:1.10.0] /Users/facundochoque/.gradle/caches/transforms-3/2d8edfc209e4ab65f141e6d058181d46/transformed/material-1.10.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.10.0] /Users/facundochoque/.gradle/caches/transforms-3/2d8edfc209e4ab65f141e6d058181d46/transformed/material-1.10.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/facundochoque/.gradle/caches/transforms-3/715d98de68a408817aa249e0f6cabd4b/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/facundochoque/.gradle/caches/transforms-3/715d98de68a408817aa249e0f6cabd4b/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
+MERGED from [androidx.compose.ui:ui-test-manifest:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/d2d450898919ffa6b13326864ae67de5/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/d2d450898919ffa6b13326864ae67de5/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/526307f7b43e930470841c0e92ede009/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/526307f7b43e930470841c0e92ede009/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/facundochoque/.gradle/caches/transforms-3/6e7435505173a793f56e9a38678f800a/transformed/emoji2-1.4.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/facundochoque/.gradle/caches/transforms-3/6e7435505173a793f56e9a38678f800a/transformed/emoji2-1.4.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/2ecb2e81806e6b0d045fe61c8d672a64/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/2ecb2e81806e6b0d045fe61c8d672a64/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.12.0] /Users/facundochoque/.gradle/caches/transforms-3/66eab059273d7711764ca64e2bd58a42/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.12.0] /Users/facundochoque/.gradle/caches/transforms-3/66eab059273d7711764ca64e2bd58a42/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/facundochoque/.gradle/caches/transforms-3/294378bd318e105f6faa6a42d0dc019c/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/facundochoque/.gradle/caches/transforms-3/294378bd318e105f6faa6a42d0dc019c/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/facundochoque/.gradle/caches/transforms-3/50bb283d00a33c4fd075863199e62beb/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/facundochoque/.gradle/caches/transforms-3/50bb283d00a33c4fd075863199e62beb/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/facundochoque/.gradle/caches/transforms-3/a4c7fc815a582c4abbb5556f9e472f6d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/facundochoque/.gradle/caches/transforms-3/a4c7fc815a582c4abbb5556f9e472f6d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+	android:extractNativeLibs
+		INJECTED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.12.0] /Users/facundochoque/.gradle/caches/transforms-3/66eab059273d7711764ca64e2bd58a42/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:16:9-35
+	android:label
+		ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:14:9-41
+	android:fullBackupContent
+		ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:12:9-54
+	android:roundIcon
+		ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:15:9-54
+	tools:targetApi
+		ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:18:9-29
+	android:icon
+		ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:13:9-43
+	android:allowBackup
+		ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:10:9-35
+	android:theme
+		ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:17:9-56
+	android:dataExtractionRules
+		ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:11:9-65
+activity#com.organizadorsemanal.MainActivity
+ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:19:9-28:20
+	android:label
+		ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:22:13-45
+	android:exported
+		ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:21:13-36
+	android:theme
+		ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:23:13-60
+	android:name
+		ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:20:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:24:13-27:29
+action#android.intent.action.MAIN
+ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:25:17-69
+	android:name
+		ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:25:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:26:17-77
+	android:name
+		ADDED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml:26:27-74
+uses-sdk
+INJECTED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml
+INJECTED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.10.0] /Users/facundochoque/.gradle/caches/transforms-3/2d8edfc209e4ab65f141e6d058181d46/transformed/material-1.10.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.10.0] /Users/facundochoque/.gradle/caches/transforms-3/2d8edfc209e4ab65f141e6d058181d46/transformed/material-1.10.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/facundochoque/.gradle/caches/transforms-3/715d98de68a408817aa249e0f6cabd4b/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/facundochoque/.gradle/caches/transforms-3/715d98de68a408817aa249e0f6cabd4b/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/facundochoque/.gradle/caches/transforms-3/ee8eb848c5330bef157da8af9750dcb7/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/facundochoque/.gradle/caches/transforms-3/ee8eb848c5330bef157da8af9750dcb7/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/facundochoque/.gradle/caches/transforms-3/697ee353b063d3c1ee71219466070b5b/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/facundochoque/.gradle/caches/transforms-3/697ee353b063d3c1ee71219466070b5b/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/facundochoque/.gradle/caches/transforms-3/66f4feb0e82fddb4d699fb6166edeed6/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/facundochoque/.gradle/caches/transforms-3/66f4feb0e82fddb4d699fb6166edeed6/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/facundochoque/.gradle/caches/transforms-3/9af6aa697790ad04f2129115a7a8fbee/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/facundochoque/.gradle/caches/transforms-3/9af6aa697790ad04f2129115a7a8fbee/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/12b3279d18e036ac11b3f0b8c63a3258/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/12b3279d18e036ac11b3f0b8c63a3258/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /Users/facundochoque/.gradle/caches/transforms-3/fe397aa42d900d3b28a348b385f5e982/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/facundochoque/.gradle/caches/transforms-3/fe397aa42d900d3b28a348b385f5e982/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/facundochoque/.gradle/caches/transforms-3/41343b558273997f7d70448b52b84334/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/facundochoque/.gradle/caches/transforms-3/41343b558273997f7d70448b52b84334/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/facundochoque/.gradle/caches/transforms-3/232021df2d298f6d23e9c587b7d1311a/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/facundochoque/.gradle/caches/transforms-3/232021df2d298f6d23e9c587b7d1311a/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/ba9c11aa1a191cbec2bc33f809b381d8/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/ba9c11aa1a191cbec2bc33f809b381d8/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.7.5] /Users/facundochoque/.gradle/caches/transforms-3/8839eb475bcc0ba331714d5f764d5c6b/transformed/navigation-common-2.7.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.5] /Users/facundochoque/.gradle/caches/transforms-3/8839eb475bcc0ba331714d5f764d5c6b/transformed/navigation-common-2.7.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.5] /Users/facundochoque/.gradle/caches/transforms-3/d8c8a2cc44ef1b7c58c0110438300cac/transformed/navigation-runtime-2.7.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.5] /Users/facundochoque/.gradle/caches/transforms-3/d8c8a2cc44ef1b7c58c0110438300cac/transformed/navigation-runtime-2.7.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.5] /Users/facundochoque/.gradle/caches/transforms-3/7745219327648d2826747a4017ad4d55/transformed/navigation-common-ktx-2.7.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.5] /Users/facundochoque/.gradle/caches/transforms-3/7745219327648d2826747a4017ad4d55/transformed/navigation-common-ktx-2.7.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.5] /Users/facundochoque/.gradle/caches/transforms-3/58a70cc7a1d0a9f75b9f1c448e3500bf/transformed/navigation-runtime-ktx-2.7.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.5] /Users/facundochoque/.gradle/caches/transforms-3/58a70cc7a1d0a9f75b9f1c448e3500bf/transformed/navigation-runtime-ktx-2.7.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.5] /Users/facundochoque/.gradle/caches/transforms-3/b47b9d8be6363a71931d41470b0f5087/transformed/navigation-compose-2.7.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.5] /Users/facundochoque/.gradle/caches/transforms-3/b47b9d8be6363a71931d41470b0f5087/transformed/navigation-compose-2.7.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/a3b756f7dab1230055f838096fe442f5/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/a3b756f7dab1230055f838096fe442f5/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/abe809c85f5998e61de18596dd607c61/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/abe809c85f5998e61de18596dd607c61/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/ab4cfc6315e5eab0bedd0a08e615c5e3/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/ab4cfc6315e5eab0bedd0a08e615c5e3/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/eac4b040dd593625b7d244eeade77243/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/eac4b040dd593625b7d244eeade77243/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/32c8edb9ac58ba912954a2bddce27e61/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/32c8edb9ac58ba912954a2bddce27e61/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/5b666fe454930ce972d9bfa1522417da/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/5b666fe454930ce972d9bfa1522417da/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/b60622c98e79b54e3a49e104b4ba516b/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/b60622c98e79b54e3a49e104b4ba516b/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/22d13b5c22cfef480953255033a31902/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/22d13b5c22cfef480953255033a31902/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/0169968bae69bc32bccec015c6f53c04/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/0169968bae69bc32bccec015c6f53c04/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/4704be1f0ca9cac01b960cdfe2ac6dde/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/4704be1f0ca9cac01b960cdfe2ac6dde/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/dcc080b7f6853f008a0acd9da4b026b0/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/dcc080b7f6853f008a0acd9da4b026b0/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/2bc688ee394cf67ca3a0df43ad96bcea/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/2bc688ee394cf67ca3a0df43ad96bcea/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/b38d13018911ce9e1dbe80e71dc3e541/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/b38d13018911ce9e1dbe80e71dc3e541/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/f39b6572e1008722e6ee9c91e4ea2be4/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/f39b6572e1008722e6ee9c91e4ea2be4/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/d2d450898919ffa6b13326864ae67de5/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/d2d450898919ffa6b13326864ae67de5/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/526307f7b43e930470841c0e92ede009/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/526307f7b43e930470841c0e92ede009/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/facundochoque/.gradle/caches/transforms-3/58fdc015275af2eee056c7aafdb67fbe/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/facundochoque/.gradle/caches/transforms-3/58fdc015275af2eee056c7aafdb67fbe/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/facundochoque/.gradle/caches/transforms-3/b7fa08a3f5cba1cc2f788bf3279c53b4/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/facundochoque/.gradle/caches/transforms-3/b7fa08a3f5cba1cc2f788bf3279c53b4/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/facundochoque/.gradle/caches/transforms-3/8b2d7e45ef4015f2b7c03f2560adaefd/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/facundochoque/.gradle/caches/transforms-3/8b2d7e45ef4015f2b7c03f2560adaefd/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/920d8a29ccfb6e2d5881167c29ea8d26/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/920d8a29ccfb6e2d5881167c29ea8d26/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/3fbd80b53bfc7d5bb0b4e4bde9b8b8c5/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/3fbd80b53bfc7d5bb0b4e4bde9b8b8c5/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.4.0] /Users/facundochoque/.gradle/caches/transforms-3/6db25307f77850c9b1b5ac8d18dddf56/transformed/emoji2-views-helper-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.4.0] /Users/facundochoque/.gradle/caches/transforms-3/6db25307f77850c9b1b5ac8d18dddf56/transformed/emoji2-views-helper-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/facundochoque/.gradle/caches/transforms-3/6e7435505173a793f56e9a38678f800a/transformed/emoji2-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/facundochoque/.gradle/caches/transforms-3/6e7435505173a793f56e9a38678f800a/transformed/emoji2-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/2ecb2e81806e6b0d045fe61c8d672a64/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/2ecb2e81806e6b0d045fe61c8d672a64/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/ab8f0c175b0de9b10a292b4f0e45e09d/transformed/lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/ab8f0c175b0de9b10a292b4f0e45e09d/transformed/lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/d6c6519dff4fa2be93bea7dc989fac35/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/d6c6519dff4fa2be93bea7dc989fac35/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/dc1832491b1a2bbda5878cec9fc407e5/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/dc1832491b1a2bbda5878cec9fc407e5/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/c6d1005910246d1eeab044517fe4b50d/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/c6d1005910246d1eeab044517fe4b50d/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/bae307bd325e70395e5e1c1ae8daf169/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/bae307bd325e70395e5e1c1ae8daf169/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/7d744f23987dbeec612213d6916c5764/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/7d744f23987dbeec612213d6916c5764/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/8c995eebe81d814c7102cb9b10d6ce02/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/8c995eebe81d814c7102cb9b10d6ce02/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/181aebb66e74b2d0c55fc93269388518/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/181aebb66e74b2d0c55fc93269388518/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/59e18f1ebed7ccc9d77282fef382bd17/transformed/lifecycle-viewmodel-compose-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/59e18f1ebed7ccc9d77282fef382bd17/transformed/lifecycle-viewmodel-compose-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/2335702b9b0951f52b6cf4bea44b59cc/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/2335702b9b0951f52b6cf4bea44b59cc/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.2] /Users/facundochoque/.gradle/caches/transforms-3/7589340379737d707dcf3a30d49093a1/transformed/activity-ktx-1.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.2] /Users/facundochoque/.gradle/caches/transforms-3/7589340379737d707dcf3a30d49093a1/transformed/activity-ktx-1.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.8.2] /Users/facundochoque/.gradle/caches/transforms-3/22fdff7a6d39e6c2d93e6da36226ede3/transformed/activity-compose-1.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.8.2] /Users/facundochoque/.gradle/caches/transforms-3/22fdff7a6d39e6c2d93e6da36226ede3/transformed/activity-compose-1.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity:1.8.2] /Users/facundochoque/.gradle/caches/transforms-3/697265d2d93dd9b1a4d7e1170b5bf7e1/transformed/activity-1.8.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.2] /Users/facundochoque/.gradle/caches/transforms-3/697265d2d93dd9b1a4d7e1170b5bf7e1/transformed/activity-1.8.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/facundochoque/.gradle/caches/transforms-3/6d8705b3720be90b9eea7fb8bdc3d5ff/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/facundochoque/.gradle/caches/transforms-3/6d8705b3720be90b9eea7fb8bdc3d5ff/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/a643d5bb9697e7caf88797c7b2ee4b6c/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/a643d5bb9697e7caf88797c7b2ee4b6c/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] /Users/facundochoque/.gradle/caches/transforms-3/8b48728c8649084b92ef7c52391c6e86/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/facundochoque/.gradle/caches/transforms-3/8b48728c8649084b92ef7c52391c6e86/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/fc4408490ec1b50b7bcc8a4c2189186e/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/fc4408490ec1b50b7bcc8a4c2189186e/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.12.0] /Users/facundochoque/.gradle/caches/transforms-3/66eab059273d7711764ca64e2bd58a42/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.12.0] /Users/facundochoque/.gradle/caches/transforms-3/66eab059273d7711764ca64e2bd58a42/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/d4d6d4b1720093dddec923c26db51e95/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/d4d6d4b1720093dddec923c26db51e95/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.12.0] /Users/facundochoque/.gradle/caches/transforms-3/30e60494cc12bfd44f56743e253f3c1f/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] /Users/facundochoque/.gradle/caches/transforms-3/30e60494cc12bfd44f56743e253f3c1f/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/facundochoque/.gradle/caches/transforms-3/294378bd318e105f6faa6a42d0dc019c/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/facundochoque/.gradle/caches/transforms-3/294378bd318e105f6faa6a42d0dc019c/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] /Users/facundochoque/.gradle/caches/transforms-3/fa7e0a37a604fe71e54599b94682a3e6/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] /Users/facundochoque/.gradle/caches/transforms-3/fa7e0a37a604fe71e54599b94682a3e6/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/facundochoque/.gradle/caches/transforms-3/ab3e86cdebe003f146879974a48c1ed5/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/facundochoque/.gradle/caches/transforms-3/ab3e86cdebe003f146879974a48c1ed5/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/facundochoque/.gradle/caches/transforms-3/57327fc6e2b7e1b913fcb978d0da48b7/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/facundochoque/.gradle/caches/transforms-3/57327fc6e2b7e1b913fcb978d0da48b7/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/8296343c7edf50d8697c728d6ab6c547/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/8296343c7edf50d8697c728d6ab6c547/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/8577de941928488c7261fdb674ea2b92/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/8577de941928488c7261fdb674ea2b92/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/4bcb75b42ed98371d8462e1995aca9a7/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/4bcb75b42ed98371d8462e1995aca9a7/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/f4ac3b97f816197194a893dadc0a8f77/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/f4ac3b97f816197194a893dadc0a8f77/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/facundochoque/.gradle/caches/transforms-3/06aa9d439898bb2a8edb55732e86935e/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/facundochoque/.gradle/caches/transforms-3/06aa9d439898bb2a8edb55732e86935e/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/7e23de4ac42d4463023366659b29eb23/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/7e23de4ac42d4463023366659b29eb23/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/facundochoque/.gradle/caches/transforms-3/50bb283d00a33c4fd075863199e62beb/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/facundochoque/.gradle/caches/transforms-3/50bb283d00a33c4fd075863199e62beb/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/8c6c1015ef7e4917680c0ab949f00d11/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/8c6c1015ef7e4917680c0ab949f00d11/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/facundochoque/.gradle/caches/transforms-3/a4c7fc815a582c4abbb5556f9e472f6d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/facundochoque/.gradle/caches/transforms-3/a4c7fc815a582c4abbb5556f9e472f6d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/e279acc52b55846186fbc4a7726a3171/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/e279acc52b55846186fbc4a7726a3171/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/d2fdb71a98f83b6334f351c71b992ff1/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/d2fdb71a98f83b6334f351c71b992ff1/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/43ebe443050df02059d17f13d422d63c/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/43ebe443050df02059d17f13d422d63c/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/e2ae2fca550e76201b2e32395d612bfa/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/facundochoque/.gradle/caches/transforms-3/e2ae2fca550e76201b2e32395d612bfa/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		INJECTED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/facundochoque/Documents/Personal/organizador-semanal/app/src/main/AndroidManifest.xml
+activity#androidx.activity.ComponentActivity
+ADDED from [androidx.compose.ui:ui-test-manifest:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/d2d450898919ffa6b13326864ae67de5/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/d2d450898919ffa6b13326864ae67de5/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/d2d450898919ffa6b13326864ae67de5/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:24:13-63
+activity#androidx.compose.ui.tooling.PreviewActivity
+ADDED from [androidx.compose.ui:ui-tooling-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/526307f7b43e930470841c0e92ede009/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/526307f7b43e930470841c0e92ede009/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.5.4] /Users/facundochoque/.gradle/caches/transforms-3/526307f7b43e930470841c0e92ede009/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/facundochoque/.gradle/caches/transforms-3/6e7435505173a793f56e9a38678f800a/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/2ecb2e81806e6b0d045fe61c8d672a64/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/2ecb2e81806e6b0d045fe61c8d672a64/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/facundochoque/.gradle/caches/transforms-3/a4c7fc815a582c4abbb5556f9e472f6d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/facundochoque/.gradle/caches/transforms-3/a4c7fc815a582c4abbb5556f9e472f6d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/facundochoque/.gradle/caches/transforms-3/6e7435505173a793f56e9a38678f800a/transformed/emoji2-1.4.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/facundochoque/.gradle/caches/transforms-3/6e7435505173a793f56e9a38678f800a/transformed/emoji2-1.4.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/facundochoque/.gradle/caches/transforms-3/6e7435505173a793f56e9a38678f800a/transformed/emoji2-1.4.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/facundochoque/.gradle/caches/transforms-3/6e7435505173a793f56e9a38678f800a/transformed/emoji2-1.4.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/facundochoque/.gradle/caches/transforms-3/6e7435505173a793f56e9a38678f800a/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/facundochoque/.gradle/caches/transforms-3/6e7435505173a793f56e9a38678f800a/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/facundochoque/.gradle/caches/transforms-3/6e7435505173a793f56e9a38678f800a/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/2ecb2e81806e6b0d045fe61c8d672a64/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/2ecb2e81806e6b0d045fe61c8d672a64/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/facundochoque/.gradle/caches/transforms-3/2ecb2e81806e6b0d045fe61c8d672a64/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /Users/facundochoque/.gradle/caches/transforms-3/66eab059273d7711764ca64e2bd58a42/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] /Users/facundochoque/.gradle/caches/transforms-3/66eab059273d7711764ca64e2bd58a42/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /Users/facundochoque/.gradle/caches/transforms-3/66eab059273d7711764ca64e2bd58a42/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+permission#com.organizadorsemanal.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /Users/facundochoque/.gradle/caches/transforms-3/66eab059273d7711764ca64e2bd58a42/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] /Users/facundochoque/.gradle/caches/transforms-3/66eab059273d7711764ca64e2bd58a42/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /Users/facundochoque/.gradle/caches/transforms-3/66eab059273d7711764ca64e2bd58a42/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /Users/facundochoque/.gradle/caches/transforms-3/66eab059273d7711764ca64e2bd58a42/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /Users/facundochoque/.gradle/caches/transforms-3/66eab059273d7711764ca64e2bd58a42/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+uses-permission#com.organizadorsemanal.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /Users/facundochoque/.gradle/caches/transforms-3/66eab059273d7711764ca64e2bd58a42/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /Users/facundochoque/.gradle/caches/transforms-3/66eab059273d7711764ca64e2bd58a42/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.6.1] /Users/facundochoque/.gradle/caches/transforms-3/294378bd318e105f6faa6a42d0dc019c/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.6.1] /Users/facundochoque/.gradle/caches/transforms-3/294378bd318e105f6faa6a42d0dc019c/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.room:room-runtime:2.6.1] /Users/facundochoque/.gradle/caches/transforms-3/294378bd318e105f6faa6a42d0dc019c/transformed/room-runtime-2.6.1/AndroidManifest.xml:28:13-60
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.6.1] /Users/facundochoque/.gradle/caches/transforms-3/294378bd318e105f6faa6a42d0dc019c/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.6.1] /Users/facundochoque/.gradle/caches/transforms-3/294378bd318e105f6faa6a42d0dc019c/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/facundochoque/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
