@@ -228,7 +228,9 @@ fun ActividadCard(
     onDelete: () -> Unit
 ) {
     Card(
-        modifier = Modifier.fillMaxWidth(),
+        modifier = Modifier
+            .fillMaxWidth()
+            .clickable { onEdit() },
         elevation = 2.dp,
         shape = RoundedCornerShape(8.dp)
     ) {
@@ -267,33 +269,17 @@ fun ActividadCard(
                 )
             }
             
-            // Botones de acción
-            Row {
-                // Botón editar
-                IconButton(
-                    onClick = onEdit,
-                    modifier = Modifier.size(24.dp)
-                ) {
-                    Icon(
-                        imageVector = Icons.Default.Edit,
-                        contentDescription = "Editar",
-                        modifier = Modifier.size(18.dp),
-                        tint = MaterialTheme.colors.primary
-                    )
-                }
-                
-                // Botón eliminar
-                IconButton(
-                    onClick = onDelete,
-                    modifier = Modifier.size(24.dp)
-                ) {
-                    Icon(
-                        imageVector = Icons.Default.Delete,
-                        contentDescription = "Eliminar",
-                        modifier = Modifier.size(18.dp),
-                        tint = MaterialTheme.colors.error
-                    )
-                }
+            // Solo botón eliminar
+            IconButton(
+                onClick = onDelete,
+                modifier = Modifier.size(24.dp)
+            ) {
+                Icon(
+                    imageVector = Icons.Default.Delete,
+                    contentDescription = "Eliminar",
+                    modifier = Modifier.size(18.dp),
+                    tint = MaterialTheme.colors.error
+                )
             }
         }
     }
