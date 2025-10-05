@@ -16,6 +16,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.ArrowDropDown
 import androidx.compose.material.icons.filled.Delete
+import androidx.compose.material.icons.filled.Edit
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -59,6 +60,8 @@ class MainActivity : ComponentActivity() {
 fun OrganizadorSemanalApp(viewModel: ActividadViewModel) {
     val actividadesPorDia by viewModel.actividadesPorDia.collectAsState()
     var showAddDialog by remember { mutableStateOf(false) }
+    var showEditDialog by remember { mutableStateOf(false) }
+    var actividadToEdit by remember { mutableStateOf<Actividad?>(null) }
     
     val diasSemana = listOf("Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo")
     val diasCortos = listOf("Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom")
@@ -95,6 +98,10 @@ fun OrganizadorSemanalApp(viewModel: ActividadViewModel) {
                 diasSemana = diasSemana,
                 diasCortos = diasCortos,
                 actividadesPorDia = actividadesPorDia,
+                onEditActividad = { actividad ->
+                    actividadToEdit = actividad
+                    showEditDialog = true
+                },
                 onDeleteActividad = { actividad ->
                     viewModel.deleteActividad(actividad)
                 }
@@ -113,6 +120,23 @@ fun OrganizadorSemanalApp(viewModel: ActividadViewModel) {
             }
         )
     }
+    
+    // Diálogo para editar actividad
+    if (showEditDialog && actividadToEdit != null) {
+        EditActividadDialog(
+            actividad = actividadToEdit!!,
+            diasSemana = diasSemana,
+            onDismiss = { 
+                showEditDialog = false
+                actividadToEdit = null
+            },
+            onUpdate = { actividadActualizada ->
+                viewModel.updateActividad(actividadActualizada)
+                showEditDialog = false
+                actividadToEdit = null
+            }
+        )
+    }
 }
 
 @Composable
@@ -120,6 +144,7 @@ fun CalendarioSemanal(
     diasSemana: List<String>,
     diasCortos: List<String>,
     actividadesPorDia: Map<String, List<Actividad>>,
+    onEditActividad: (Actividad) -> Unit,
     onDeleteActividad: (Actividad) -> Unit
 ) {
     LazyColumn(
@@ -132,6 +157,7 @@ fun CalendarioSemanal(
             DiaSemanaCard(
                 dia = dia,
                 actividades = actividadesPorDia[dia] ?: emptyList(),
+                onEditActividad = onEditActividad,
                 onDeleteActividad = onDeleteActividad
             )
         }
@@ -142,6 +168,7 @@ fun CalendarioSemanal(
 fun DiaSemanaCard(
     dia: String,
     actividades: List<Actividad>,
+    onEditActividad: (Actividad) -> Unit,
     onDeleteActividad: (Actividad) -> Unit
 ) {
     Card(
@@ -184,6 +211,7 @@ fun DiaSemanaCard(
                     actividades.forEach { actividad ->
                         ActividadCard(
                             actividad = actividad,
+                            onEdit = { onEditActividad(actividad) },
                             onDelete = { onDeleteActividad(actividad) }
                         )
                     }
@@ -196,6 +224,7 @@ fun DiaSemanaCard(
 @Composable
 fun ActividadCard(
     actividad: Actividad,
+    onEdit: () -> Unit,
     onDelete: () -> Unit
 ) {
     Card(
@@ -238,19 +267,67 @@ fun ActividadCard(
                 )
             }
             
-            // Botón eliminar
-            IconButton(
-                onClick = onDelete,
-                modifier = Modifier.size(24.dp)
-            ) {
-                Icon(
-                    imageVector = Icons.Default.Delete,
-                    contentDescription = "Eliminar",
-                    modifier = Modifier.size(18.dp),
-                    tint = MaterialTheme.colors.error
-                )
+            // Botones de acción
+            Row {
+                // Botón editar
+                IconButton(
+                    onClick = onEdit,
+                    modifier = Modifier.size(24.dp)
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.Edit,
+                        contentDescription = "Editar",
+                        modifier = Modifier.size(18.dp),
+                        tint = MaterialTheme.colors.primary
+                    )
+                }
+                
+                // Botón eliminar
+                IconButton(
+                    onClick = onDelete,
+                    modifier = Modifier.size(24.dp)
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.Delete,
+                        contentDescription = "Eliminar",
+                        modifier = Modifier.size(18.dp),
+                        tint = MaterialTheme.colors.error
+                    )
+                }
             }
         }
+    }
+}
+
+@Composable
+fun DiaButton(
+    dia: String,
+    isSelected: Boolean,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    Button(
+        onClick = onClick,
+        modifier = modifier.height(48.dp),
+        colors = ButtonDefaults.buttonColors(
+            backgroundColor = if (isSelected) 
+                MaterialTheme.colors.primary 
+            else 
+                MaterialTheme.colors.surface,
+            contentColor = if (isSelected) 
+                MaterialTheme.colors.onPrimary 
+            else 
+                MaterialTheme.colors.onSurface
+        ),
+        elevation = ButtonDefaults.elevation(
+            defaultElevation = if (isSelected) 8.dp else 2.dp
+        )
+    ) {
+        Text(
+            text = dia,
+            fontSize = 12.sp,
+            fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal
+        )
     }
 }
 
@@ -283,37 +360,47 @@ fun AddActividadDialog(
                     modifier = Modifier.fillMaxWidth()
                 )
                 
-                // Selector de día con botones
+                // Selector de día mejorado
                 Text(
-                    text = "Día:",
-                    style = MaterialTheme.typography.caption,
+                    text = "Día seleccionado: $dia",
+                    style = MaterialTheme.typography.body2,
+                    fontWeight = FontWeight.Medium,
+                    color = MaterialTheme.colors.primary,
                     modifier = Modifier.padding(bottom = 8.dp)
                 )
                 
-                LazyColumn(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .height(200.dp)
+                // Grid de días
+                Column(
+                    modifier = Modifier.fillMaxWidth()
                 ) {
-                    items(diasSemana) { diaOption ->
-                        Card(
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .padding(vertical = 2.dp)
-                                .clickable { dia = diaOption },
-                            backgroundColor = if (dia == diaOption) 
-                                MaterialTheme.colors.primary.copy(alpha = 0.1f) 
-                            else 
-                                MaterialTheme.colors.surface,
-                            elevation = if (dia == diaOption) 4.dp else 1.dp
-                        ) {
-                            Text(
-                                text = diaOption,
-                                modifier = Modifier.padding(16.dp),
-                                color = if (dia == diaOption) 
-                                    MaterialTheme.colors.primary 
-                                else 
-                                    MaterialTheme.colors.onSurface
+                    // Primera fila
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(8.dp)
+                    ) {
+                        diasSemana.take(4).forEach { diaOption ->
+                            DiaButton(
+                                dia = diaOption,
+                                isSelected = dia == diaOption,
+                                onClick = { dia = diaOption },
+                                modifier = Modifier.weight(1f)
+                            )
+                        }
+                    }
+                    
+                    Spacer(modifier = Modifier.height(8.dp))
+                    
+                    // Segunda fila
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(8.dp)
+                    ) {
+                        diasSemana.drop(4).forEach { diaOption ->
+                            DiaButton(
+                                dia = diaOption,
+                                isSelected = dia == diaOption,
+                                onClick = { dia = diaOption },
+                                modifier = Modifier.weight(1f)
                             )
                         }
                     }
@@ -386,6 +473,158 @@ fun AddActividadDialog(
                 enabled = nombre.isNotBlank()
             ) {
                 Text("Agregar")
+            }
+        },
+        dismissButton = {
+            TextButton(onClick = onDismiss) {
+                Text("Cancelar")
+            }
+        }
+    )
+}
+
+@Composable
+fun EditActividadDialog(
+    actividad: Actividad,
+    diasSemana: List<String>,
+    onDismiss: () -> Unit,
+    onUpdate: (Actividad) -> Unit
+) {
+    var nombre by remember { mutableStateOf(actividad.nombre) }
+    var dia by remember { mutableStateOf(actividad.dia) }
+    var horaInicio by remember { mutableStateOf(actividad.horaInicio) }
+    var horaFin by remember { mutableStateOf(actividad.horaFin) }
+    var color by remember { mutableStateOf(actividad.color) }
+    
+    val colores = listOf("#4A90E2", "#7ED321", "#D0021B", "#9013FE", "#50E3C2", "#F5A623")
+    
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text("Editar Actividad") },
+        text = {
+            Column(
+                verticalArrangement = Arrangement.spacedBy(16.dp)
+            ) {
+                OutlinedTextField(
+                    value = nombre,
+                    onValueChange = { nombre = it },
+                    label = { Text("Nombre de la actividad") },
+                    modifier = Modifier.fillMaxWidth()
+                )
+                
+                // Selector de día mejorado
+                Text(
+                    text = "Día seleccionado: $dia",
+                    style = MaterialTheme.typography.body2,
+                    fontWeight = FontWeight.Medium,
+                    color = MaterialTheme.colors.primary,
+                    modifier = Modifier.padding(bottom = 8.dp)
+                )
+                
+                // Grid de días
+                Column(
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    // Primera fila
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(8.dp)
+                    ) {
+                        diasSemana.take(4).forEach { diaOption ->
+                            DiaButton(
+                                dia = diaOption,
+                                isSelected = dia == diaOption,
+                                onClick = { dia = diaOption },
+                                modifier = Modifier.weight(1f)
+                            )
+                        }
+                    }
+                    
+                    Spacer(modifier = Modifier.height(8.dp))
+                    
+                    // Segunda fila
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(8.dp)
+                    ) {
+                        diasSemana.drop(4).forEach { diaOption ->
+                            DiaButton(
+                                dia = diaOption,
+                                isSelected = dia == diaOption,
+                                onClick = { dia = diaOption },
+                                modifier = Modifier.weight(1f)
+                            )
+                        }
+                    }
+                }
+                
+                // Horarios
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    OutlinedTextField(
+                        value = horaInicio,
+                        onValueChange = { horaInicio = it },
+                        label = { Text("Inicio") },
+                        modifier = Modifier.weight(1f)
+                    )
+                    OutlinedTextField(
+                        value = horaFin,
+                        onValueChange = { horaFin = it },
+                        label = { Text("Fin") },
+                        modifier = Modifier.weight(1f)
+                    )
+                }
+                
+                // Selector de color
+                Text("Color:", style = MaterialTheme.typography.caption)
+                Row(
+                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    colores.forEach { colorOption ->
+                        Box(
+                            modifier = Modifier
+                                .size(32.dp)
+                                .background(
+                                    Color(android.graphics.Color.parseColor(colorOption)),
+                                    CircleShape
+                                )
+                                .clickable { color = colorOption }
+                                .then(
+                                    if (color == colorOption) {
+                                        Modifier.border(
+                                            2.dp,
+                                            MaterialTheme.colors.primary,
+                                            CircleShape
+                                        )
+                                    } else {
+                                        Modifier
+                                    }
+                                )
+                        )
+                    }
+                }
+            }
+        },
+        confirmButton = {
+            TextButton(
+                onClick = {
+                    if (nombre.isNotBlank()) {
+                        onUpdate(
+                            actividad.copy(
+                                nombre = nombre,
+                                dia = dia,
+                                horaInicio = horaInicio,
+                                horaFin = horaFin,
+                                color = color
+                            )
+                        )
+                    }
+                },
+                enabled = nombre.isNotBlank()
+            ) {
+                Text("Actualizar")
             }
         },
         dismissButton = {
