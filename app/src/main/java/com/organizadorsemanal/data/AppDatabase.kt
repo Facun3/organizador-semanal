@@ -6,13 +6,14 @@ import androidx.room.RoomDatabase
 import android.content.Context
 
 @Database(
-    entities = [Actividad::class],
-    version = 1,
+    entities = [Actividad::class, TareaPendiente::class],
+    version = 2,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {
     
     abstract fun actividadDao(): ActividadDao
+    abstract fun tareaPendienteDao(): TareaPendienteDao
     
     companion object {
         @Volatile

@@ -1,17 +1,20 @@
 # 📅 Organizador Semanal
 
-Una aplicación Android moderna y minimalista para organizar tus actividades semanales de manera visual e intuitiva.
+Una aplicación Android moderna y minimalista para organizar tus actividades semanales y gestionar tareas pendientes de manera visual e intuitiva.
 
 ## 🎯 Características
 
 - **📱 Interfaz Moderna**: Diseño limpio con Jetpack Compose y Material Design 2
 - **🗓️ Vista Semanal**: Organización visual de actividades por días de la semana en layout vertical
-- **🎨 Colores Personalizables**: 6 colores predefinidos para categorizar actividades
-- **💾 Persistencia de Datos**: Base de datos Room para guardar actividades permanentemente
+- **📋 Gestión de Tareas Pendientes**: Nueva pestaña dedicada para tareas por hacer
+- **🎨 Colores Personalizables**: 6 colores predefinidos para categorizar actividades y tareas
+- **⭐ Sistema de Prioridades**: Las primeras 3 tareas destacadas con animaciones y efectos visuales
+- **💾 Persistencia de Datos**: Base de datos Room para guardar actividades y tareas permanentemente
 - **⚡ Arquitectura MVVM**: Código limpio y mantenible con ViewModel y Repository
-- **✏️ Edición de Actividades**: Toca cualquier actividad para editarla directamente
+- **✏️ Edición Directa**: Toca cualquier actividad o tarea para editarla directamente
 - **⏰ Selectores de Tiempo Nativos**: TimePickerDialog nativo de Android para selección intuitiva
-- **🗑️ Gestión de Actividades**: Agregar, editar y eliminar actividades fácilmente
+- **🗑️ Gestión Completa**: Agregar, editar y eliminar actividades y tareas fácilmente
+- **📱 Navegación por Pestañas**: BottomNavigation para alternar entre Calendario y Pendientes
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -23,6 +26,8 @@ Una aplicación Android moderna y minimalista para organizar tus actividades sem
 - **Coroutines** - Programación asíncrona con Flow
 - **StateFlow** - Gestión de estado reactivo
 - **TimePickerDialog** - Selector de tiempo nativo de Android
+- **BottomNavigation** - Navegación por pestañas
+- **Animaciones Compose** - Efectos visuales y transiciones
 - **Gradle** - Sistema de construcción y gestión de dependencias
 
 ### Dependencias Principales
@@ -46,13 +51,15 @@ implementation("androidx.navigation:navigation-compose:2.7.5")
 ## 📱 Capturas de Pantalla
 
 La aplicación presenta:
-- Vista principal con tarjetas de días de la semana en layout vertical
-- Formulario intuitivo para agregar actividades con selectores nativos
-- Selector visual de días con botones en grid
-- Selectores de tiempo nativos (TimePickerDialog)
-- Tarjetas de actividades con colores personalizables
-- Edición directa al tocar cualquier actividad
-- Botones de eliminación para cada actividad
+- **Pestaña Calendario**: Vista principal con tarjetas de días de la semana en layout vertical
+- **Pestaña Pendientes**: Lista vertical de tareas pendientes con sistema de prioridades
+- **Formularios intuitivos** para agregar actividades y tareas con selectores nativos
+- **Selector visual de días** con botones en grid
+- **Selectores de tiempo nativos** (TimePickerDialog)
+- **Tarjetas personalizables** con colores para actividades y tareas
+- **Sistema de prioridades** con animaciones para las primeras 3 tareas
+- **Edición directa** al tocar cualquier actividad o tarea
+- **Navegación fluida** entre pestañas con BottomNavigation
 
 ## 🚀 Instalación y Uso
 
@@ -77,6 +84,8 @@ git clone https://github.com/tu-usuario/organizador-semanal.git
 ```
 
 ### Uso de la Aplicación
+
+#### 📅 Pestaña Calendario
 1. **Agregar Actividades**: Toca el botón "+" flotante
 2. **Seleccionar Día**: Elige el día de la semana del grid de botones
 3. **Configurar Horarios**: Toca los campos de hora para abrir selectores nativos
@@ -85,22 +94,39 @@ git clone https://github.com/tu-usuario/organizador-semanal.git
 6. **Editar**: Toca cualquier actividad para editarla directamente
 7. **Eliminar**: Toca el icono de eliminar en cualquier actividad
 
+#### 📋 Pestaña Pendientes
+1. **Agregar Tareas**: Toca el botón "+" flotante
+2. **Configurar Prioridad**: Selecciona Normal, Alta o Urgente
+3. **Agregar Descripción**: Opcional, para más detalles
+4. **Elegir Color**: Selecciona un color para categorizar
+5. **Guardar**: Toca "Agregar" para crear la tarea
+6. **Editar**: Toca cualquier tarea para editarla directamente
+7. **Eliminar**: Toca el icono de eliminar en cualquier tarea
+8. **Ver Prioridades**: Las primeras 3 tareas se destacan con animaciones
+
 ## 🏗️ Estructura del Proyecto
 
 ```
 app/src/main/java/com/organizadorsemanal/
 ├── data/
-│   ├── Actividad.kt              # Entidad de datos
-│   ├── ActividadDao.kt           # Acceso a datos
-│   ├── ActividadRepository.kt    # Repositorio de datos
+│   ├── Actividad.kt              # Entidad de actividades
+│   ├── ActividadDao.kt           # DAO de actividades
+│   ├── ActividadRepository.kt    # Repositorio de actividades
+│   ├── TareaPendiente.kt         # Entidad de tareas pendientes
+│   ├── TareaPendienteDao.kt      # DAO de tareas pendientes
+│   ├── TareaPendienteRepository.kt # Repositorio de tareas pendientes
 │   └── AppDatabase.kt            # Base de datos Room
 ├── ui/
-│   └── ActividadViewModel.kt     # ViewModel para UI
+│   ├── ActividadViewModel.kt     # ViewModel para actividades
+│   └── TareaPendienteViewModel.kt # ViewModel para tareas pendientes
+├── ui/screens/
+│   ├── CalendarioScreen.kt       # Pantalla del calendario semanal
+│   └── PendientesScreen.kt       # Pantalla de tareas pendientes
 ├── ui/theme/
 │   ├── Color.kt                  # Paleta de colores
 │   ├── Theme.kt                  # Tema de la aplicación
 │   └── Type.kt                   # Tipografía
-└── MainActivity.kt               # Actividad principal
+└── MainActivity.kt               # Actividad principal con navegación
 ```
 
 ## 🎨 Diseño
@@ -126,15 +152,23 @@ La aplicación sigue los principios de Material Design 2 con:
 - [x] Selectores de tiempo nativos (TimePickerDialog)
 - [x] Arquitectura MVVM completa
 - [x] Migración destructiva para cambios de esquema
+- [x] **Nueva pestaña "Pendientes"** para gestión de tareas
+- [x] **Sistema de prioridades** con animaciones para las primeras 3 tareas
+- [x] **Navegación por pestañas** con BottomNavigation
+- [x] **Gestión completa de tareas pendientes** (CRUD)
+- [x] **Colores personalizables** para tareas
+- [x] **Fechas de creación** automáticas
+- [x] **Descripciones opcionales** para tareas
 
 ### 🔄 Futuras Mejoras
 - [ ] Notificaciones programadas
-- [ ] Categorías de actividades
+- [ ] Categorías de actividades y tareas
 - [ ] Exportar/importar datos
 - [ ] Modo oscuro automático
 - [ ] Widgets de pantalla de inicio
 - [ ] Sincronización en la nube
-- [ ] Drag and drop para reordenar actividades
+- [ ] Drag and drop para reordenar actividades y tareas
+- [ ] Filtros y búsqueda en tareas pendientes
 
 ## 🤝 Contribuir
 
